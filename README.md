@@ -36,7 +36,7 @@
 ## Creating HTML document in server
 1. Create directory for the html: ``` sudo mkdir -p /var/www/(server ip address)/html ```
 2. Create and Edit the html file: ``` sudo vim /var/www/(server ip address)/html/index.html ```
-3. Inside undex.html:
+3. Inside undex.html: (see index.html)
     ``` 
     <!DOCTYPE html>
     <html lang="en">
@@ -53,7 +53,7 @@
 ---
 ## Writing NGINX server block
 1. Edit  ``` /etc/nginx/sites-available/(server ip address) ```
-2. Content:
+2. Content: (see server-block)
 ```
 server {
         listen 80;
@@ -92,7 +92,7 @@ server {
 ## Creating HTML document in server
 1. Create directory for the html: ``` sudo mkdir -p /var/www/(server ip address)/html ```
 2. Create and Edit the html file: ``` sudo vim /var/www/(server ip address)/html/index.html ```
-3. Inside undex.html:
+3. Inside index.html: (see index.html)
     ``` 
     <!DOCTYPE html>
     <html lang="en">
@@ -125,7 +125,7 @@ server {
 ---
 ## Start/Restart Caddy Service
 1. Edit caddy.service file: ``` sudo vim /etc/systemd/system/caddy.service ```
-2. Add Caddy.service content: 
+2. Add Caddy.service content: (see Caddyfile)
     ```
     [Unit]
     Description=Serve HTML in /var/www using caddy
