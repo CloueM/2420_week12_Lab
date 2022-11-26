@@ -151,10 +151,9 @@ server {
 # Setting up Firewall
 1. To show the list of application configurations: ``` sudo ufw app list ```
 2. To allow all incoming HTTP and SSH connections:
-    ``` sudo ufw allow http ``` or ``` sudo ufw allow 22 ```
+    ``` sudo ufw allow http ``` and ``` sudo ufw allow 22 ```
 3. And enable ufw: ``` sudo ufw enable ```
-4. To check firewall status: ``` sudo ufw status ```
+4. To check firewall status: ``` sudo ufw status numbered ```
 ---
 To see if this works, exit to your server ssh: ``` exit ```
 and visit you server ip address in the browser.
-
